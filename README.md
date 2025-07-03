@@ -12,7 +12,8 @@ A simple web application that predicts the species of an Iris flower (Setosa, Ve
 
 ## 📊 Demo
 
-![Demo Screenshot](static/iris-demo.png) <!-- Replace with your screenshot path -->
+![Demo Screenshot](static/demo1.png) <!-- Replace with your screenshot path -->
+![Demo Screenshot](static/demo2.png) <!-- Replace with your screenshot path -->
 
 ## 🧠 Model
 
@@ -35,22 +36,3 @@ Common algorithms you can try:
 - **Backend**: Python, Flask
 - **ML**: scikit-learn
 - **Deployment**: Localhost
-
-## 📂 Project Structure
-<details>
-iris-identifier/
-│
-├── static/                 # Static assets like CSS, images
-│   └── iris-demo.png
-│
-├── templates/              # HTML templates
-│   └── index.html
-│
-├── model/                  # Trained model & training script
-│   ├── iris_model.pkl      # Serialized model file
-│   └── train_model.py      # Model training script
-│
-├── app.py                  # Flask backend script
-├── requirements.txt        # Python dependencies
-└── README.md               # Project documentation
-</details>
