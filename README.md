@@ -37,7 +37,7 @@ Common algorithms you can try:
 - **Deployment**: Localhost
 
 ## 📂 Project Structure
-
+<details>
 iris-identifier/
 │
 ├── static/ # Static assets like CSS, images
@@ -53,3 +53,4 @@ iris-identifier/
 ├── app.py # Flask backend
 ├── requirements.txt # Python dependencies
 └── README.md # Project documentation
+</details>
