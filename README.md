@@ -40,17 +40,17 @@ Common algorithms you can try:
 <details>
 iris-identifier/
 │
-├── static/ # Static assets like CSS, images
-│ └── iris-demo.png
+├── static/                 # Static assets like CSS, images
+│   └── iris-demo.png
 │
-├── templates/ # HTML templates
-│ └── index.html
+├── templates/              # HTML templates
+│   └── index.html
 │
-├── model/ # Trained model & script
-│ └── iris_model.pkl
-│ └── train_model.py
+├── model/                  # Trained model & training script
+│   ├── iris_model.pkl      # Serialized model file
+│   └── train_model.py      # Model training script
 │
-├── app.py # Flask backend
-├── requirements.txt # Python dependencies
-└── README.md # Project documentation
+├── app.py                  # Flask backend script
+├── requirements.txt        # Python dependencies
+└── README.md               # Project documentation
 </details>
