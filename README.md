@@ -16,7 +16,7 @@ A simple web application that predicts the species of an Iris flower (Setosa, Ve
 
 ## 🧠 Model
 
-The model is trained on the Iris dataset available via `sklearn.datasets.load_iris`. It uses 4 features:
+The model is trained on the Iris dataset available on `UCI Machine Learning Repository`. It uses 4 features:
 
 - Sepal Length
 - Sepal Width
@@ -31,10 +31,25 @@ Common algorithms you can try:
 
 ## 🛠️ Tech Stack
 
-- **Frontend**: HTML, CSS, Bootstrap (optional)
+- **Frontend**: HTML, CSS
 - **Backend**: Python, Flask
 - **ML**: scikit-learn
-- **Deployment**: Localhost (can be deployed to Render, Heroku, etc.)
+- **Deployment**: Localhost
 
 ## 📂 Project Structure
 
+iris-identifier/
+│
+├── static/ # Static assets like CSS, images
+│ └── iris-demo.png
+│
+├── templates/ # HTML templates
+│ └── index.html
+│
+├── model/ # Trained model & script
+│ └── iris_model.pkl
+│ └── train_model.py
+│
+├── app.py # Flask backend
+├── requirements.txt # Python dependencies
+└── README.md # Project documentation
