@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iris Identifier</title>
+
+    <link rel="stylesheet" href="{{url_for('static', filename = 'style.css')}}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="nav">
+        <h1>Iris Identifier</h1>
+    </div>
+    <form action="/predict" method="post">
+        <div class="container">
+            <div class="box left">
+                <h2>Sepal</h2>
+                <input type="text" name="sepal_length" placeholder="sepal length {4.3 - 7.9}">
+                <input type="text" name="sepal_width" placeholder="sepal width {2.0 - 4.4}">
+            </div>
+            <div class="box right">
+                <h2>Petal</h2>
+                <input type="text" name="petal_length" placeholder="petal length {1.0 - 6.9}">
+                <input type="text" name="petal_width" placeholder="petal width {0.1 - 2.5}">
+            </div>
+        </div>
+        <button class="btn" type="submit">Check</button>
+    </form>
+    <!-- <div class="output-box">
+        <p>Result</p>
+        <span class="result"></span>
+    </div> -->
+
+    {% if prediction %}
+        <h2>{{prediction}}</h2>
+        {% if image %}
+            <img src="{{ url_for('static', filename=image) }}" alt="{{prediction}} image">
+        {% endif %}
+    {% endif %}
+</body>
+
+</html>
